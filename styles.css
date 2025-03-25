@@ -1,0 +1,314 @@
+/* Default styling for Xtreme Fitness */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 10px 0;
+    color: #444;
+}
+
+p {
+    margin: 0;
+    padding: 10px 0;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    transition: all .3s;
+}
+
+a:hover {}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5em 1em;
+    ;
+}
+
+.wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+nav ul li {
+    padding: 0 1.5em
+}
+
+nav ul li a {
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    font-size: 18px;
+}
+
+.logo {
+    font-family: 'Bebas Neue';
+    text-transform: uppercase;
+    color: #333;
+}
+
+.logo img {
+    width: 200px;
+}
+
+.cta-btn {
+    background-color: #D40000;
+    color: white;
+    padding: 1em 2em;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.hero-cta {
+    background-color: #D40000;
+    color: white;
+    font-weight: 500;
+    padding: 1em 3em;
+    border: 1px solid #D40000;
+    margin: 2em 0;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.hero-cta2 {
+    color: white;
+    margin-left: 1.5em;
+    padding: 1em 2em;
+}
+
+.hero-heading {
+    font-family: 'Bebas Neue';
+    color: white;
+    font-size: 70px;
+    width: 100%;
+    line-height: 5rem;
+    letter-spacing: 5px;
+}
+
+.hero-para {
+    color: white;
+    width: 30%;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-text {
+    width: 50%;
+}
+
+.about-img {
+    width: 40%;
+    display: grid;
+    place-items: center;
+}
+
+.about-img img {
+    width: 80%;
+}
+
+.section-heading {
+    font-size: 30px;
+    color: #D40000;
+    font-family: 'Bebas Neue';
+    letter-spacing: 2px;
+}
+
+.section-para {
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: 500;
+    font-smooth: auto;
+    color: #333;
+}
+
+.animation {
+    height: 70px;
+    overflow: hidden;
+    display: inline-block;
+    margin-bottom: -10px;
+}
+
+.animation>div>div {
+    padding: 0.25rem 0.75rem;
+    height: 70px;
+    margin-bottom: .5rem;
+    display: inline-block;
+}
+
+.animation div:first-child {
+    animation: text-animation 8s infinite;
+}
+
+.first div {
+    background-color: #20a7d8;
+    font-family: 'Bebas Neue';
+    padding: .1rem 0.75rem !important;
+}
+
+.second div {
+    background-color: #CD921E;
+    font-family: 'Bebas Neue';
+}
+
+.third div {
+    background-color: #c10528;
+    font-family: 'Bebas Neue';
+}
+
+.learn-more {
+    color: #D40000;
+    font-weight: 400;
+    margin-top: 1.5em;
+    display: block;
+}
+
+.section-subheading {
+    font-weight: 600;
+    line-height: 1;
+    padding: 0;
+    margin-bottom: 1em;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 7em;
+
+}
+
+.card {
+    width: 18%;
+    text-align: center;
+    padding: 1.5em 1em;
+    background-color: #f8f8f8;
+    font-size: 24px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+}
+.card p{
+    font-family: "Bebas Neue",sans-serif;
+    font-size: 26px;
+    color: #333;
+    line-height: 1.1;
+    padding: 0;
+}
+.card img {
+    width: 40%;
+    margin-bottom: 1em;
+}
+
+#hero {
+    height: 80vh;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+    background-color: rgba(0, 0, 0, .6);
+    background-blend-mode: overlay;
+    background-position: top right;
+}
+
+#about {
+    padding: 4em 0;
+    justify-content: space-between;
+}
+
+#facilities {
+    padding: 5em 0;
+    text-align: center;
+}
+
+@keyframes text-animation {
+    0% {
+        margin-top: -5px;
+    }
+
+    10% {
+        margin-top: -5px;
+    }
+
+    20% {
+        margin-top: -90px;
+    }
+
+    30% {
+        margin-top: -90px;
+    }
+
+    40% {
+        margin-top: -175px;
+    }
+
+    60% {
+        margin-top: -175px;
+    }
+
+    70% {
+        margin-top: -90px;
+    }
+
+    80% {
+        margin-top: -90px;
+    }
+
+    90% {
+        margin-top: -5px;
+    }
+
+    100% {
+        margin-top: -5px;
+    }
+}
