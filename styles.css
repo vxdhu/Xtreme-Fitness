@@ -64,7 +64,7 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px 0;
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
     bottom: 0;
 }
@@ -249,6 +249,30 @@ nav ul li a:hover {
 .card img {
     width: 40%;
     margin-bottom: 1em;
+}
+
+.programs{
+    display: flex;
+    margin: 4em 0;
+}
+.program-gym, .program-academy{
+    width: 50%;
+    height: 50vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    place-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: overlay;
+    background-position: center;
+}
+.program-gym h4, .program-academy h4{
+    font-family: "Bebas Neue",sans-serif;
+    font-size: 80px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 20px;
+    /* color: #D40000; */
 }
 
 #hero {
