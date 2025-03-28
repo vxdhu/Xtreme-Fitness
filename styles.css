@@ -66,7 +66,7 @@ footer {
     padding: 10px 0;
     /* position: fixed; */
     width: 100%;
-    bottom: 0;
+    /* bottom: 0; */
 }
 
 nav ul {
@@ -239,23 +239,27 @@ nav ul li a:hover {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, .1);
 }
-.card p{
-    font-family: "Bebas Neue",sans-serif;
+
+.card p {
+    font-family: "Bebas Neue", sans-serif;
     font-size: 26px;
     color: #333;
     line-height: 1.1;
     padding: 0;
 }
+
 .card img {
     width: 40%;
     margin-bottom: 1em;
 }
 
-.programs{
+.programs {
     display: flex;
     margin: 4em 0;
 }
-.program-gym, .program-academy{
+
+.program-gym,
+.program-academy {
     width: 50%;
     height: 50vh;
     background-size: cover;
@@ -266,13 +270,22 @@ nav ul li a:hover {
     background-blend-mode: overlay;
     background-position: center;
 }
-.program-gym h4, .program-academy h4{
-    font-family: "Bebas Neue",sans-serif;
+
+.program-gym h4,
+.program-academy h4 {
+    font-family: "Bebas Neue", sans-serif;
     font-size: 80px;
     color: white;
     text-transform: uppercase;
     letter-spacing: 20px;
     /* color: #D40000; */
+}
+
+.git {
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+
 }
 
 #hero {
@@ -294,6 +307,8 @@ nav ul li a:hover {
     padding: 5em 0;
     text-align: center;
 }
+
+
 
 @keyframes text-animation {
     0% {
@@ -335,4 +350,88 @@ nav ul li a:hover {
     100% {
         margin-top: -5px;
     }
+}
+
+/* Enquiry Form CSS */
+#enquiry {
+    padding: 5em 0;
+    text-align: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center
+}
+
+#enquiry .wrapper {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 40%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 2em;
+
+}
+
+#enquiry .section-subheading {
+    color: white;
+    text-align: center;
+
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.submit-btn {
+    background-color: #D40000;
+    color: white;
+    font-weight: 500;
+    padding: 1em 3em;
+    border: 1px solid #D40000;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+.form-field {
+    position: relative;
+    margin: 32px 0;
+    width: 80%;
+}
+
+.input-text {
+    display: block;
+    width: 100%;
+    height: 36px;
+    border-width: 0 0 2px 0;
+    border-color: #000;
+    font-family: "Montserrat", serif;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    background-color: transparent;
+    outline: none;
+    color: whitesmoke;
+}
+
+.label {
+    position: absolute;
+    left: 0px;
+    bottom: 11px;
+    font-family: "Montserrat", serif;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #ffffff;
+    cursor: text;
+    transition: transform .2s ease-in-out;
+}
+
+.contact-form .input-text:focus+.label,
+.contact-form .input-text.not-empty+.label {
+    transform: translateY(-30px);
 }
