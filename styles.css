@@ -221,6 +221,7 @@ nav ul li a:hover {
     line-height: 1;
     padding: 0;
     margin-bottom: 1em;
+    text-transform: uppercase;
 }
 
 .card-container {
@@ -358,11 +359,11 @@ nav ul li a:hover {
     text-align: right;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: bottom center
+    background-position: top center
 }
 
 #enquiry .wrapper {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.7);
     width: 40%;
     text-align: center;
     margin: 0 auto;
