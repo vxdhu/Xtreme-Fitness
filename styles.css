@@ -59,23 +59,15 @@ header {
     margin: 0 auto;
 }
 
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    /* position: fixed; */
-    width: 100%;
-    /* bottom: 0; */
-}
-
 nav ul {
     list-style-type: none;
     display: flex;
     justify-content: space-between;
     padding: 0;
 }
-
+li{
+    list-style-type: none;
+}
 nav ul li {
     padding: 0 1.5em
 }
@@ -239,6 +231,7 @@ nav ul li a:hover {
     font-size: 24px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    transition: all .3s ease-in-out;
 }
 
 .card p {
@@ -267,15 +260,30 @@ nav ul li a:hover {
     background-repeat: no-repeat;
     display: grid;
     place-items: center;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.3);
     background-blend-mode: overlay;
     background-position: center;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.program-gym:hover,
+.program-academy:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    /* background-blend-mode: overlay; */
+    background-position: center;
+    transition: all .3s ease-in-out;
+}
+.program-gym:hover h4,
+.program-academy:hover h4{
+    color: #D40000;
+    transition: all .3s ease-in-out;
+    letter-spacing: 40px;
 }
 
 .program-gym h4,
 .program-academy h4 {
     font-family: "Bebas Neue", sans-serif;
-    font-size: 80px;
+    font-size: 40px;
     color: white;
     text-transform: uppercase;
     letter-spacing: 20px;
@@ -424,7 +432,7 @@ nav ul li a:hover {
     left: 0px;
     bottom: 11px;
     font-family: "Montserrat", serif;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 26px;
     font-weight: 400;
     color: #ffffff;
@@ -435,4 +443,98 @@ nav ul li a:hover {
 .contact-form .input-text:focus+.label,
 .contact-form .input-text.not-empty+.label {
     transform: translateY(-30px);
+}
+
+
+
+/* Footer CSS */
+
+footer {
+    background: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 4em 0;
+    padding-bottom: 0;
+    /* position: fixed; */
+    width: 100%;
+    /* bottom: 0; */
+}
+
+footer .note{
+    margin-top: 3em;
+    background-color: #580000;
+    margin-bottom: 0;
+}
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-logo{
+    width: 400px;
+    text-align: left;
+}
+.footer-menu{
+    padding: 0;
+}
+.footer-menu li {
+    list-style-type: none;
+    color: white;
+    text-align: left;
+    padding-bottom: 1.25em;
+
+}
+.footer-menu li a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    
+    text-align: left;
+}
+.footer-left{
+    width: 40%;
+    text-align: left;
+}
+.footer-right{
+    width: 30%;
+    text-align: left;
+}
+.footer-middle{
+    width: 20%;
+    text-align: left;
+}
+.footer-left p{
+    text-align: left;
+    font-size: 12px;
+    margin-top: 2em;
+    width: 400px;
+   
+}
+.footer-menu img, .footer-social img{
+    width: 26px;
+    padding-right: 0.5em;
+}
+.footer-menu li{
+    display: flex;
+    align-items: center;
+}
+.footer-social{
+    display: flex;
+    padding: 0;
+    align-items: center;    
+}
+.footer-social li{
+    list-style-type: none;
+    padding-right: 1.25em;
+}
+.card:hover {
+    transform: scale(1.05);
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}   
+.card:hover p{
+    color: #D40000;
 }
