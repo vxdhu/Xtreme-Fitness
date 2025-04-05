@@ -79,4 +79,97 @@
   font-style: italic;
   font-weight: 300;
   margin: 0 0 20px;
+}
+
+#coaches {
+  padding: 5em 0;
+  text-align: center;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.781);
+  background-blend-mode: overlay;
+}
+
+#coaches .section-subheading {
+  color: white;
+  text-align: center;
+}
+
+.coach-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2em;
+  padding: 2em 0;
+}
+
+.coach-card {
+  padding-bottom: 1em;
+  color: white;
+  background-color: rgba(56, 56, 56, 0.308);
+  width: 22.5%;
+  border-radius: 5px;
+}
+.coach-card img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 350px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.coach-card h4 {
+  font-size: 16px;
+  padding-top: 10px;
+  color: white;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+.coach-card p {
+  font-size: 14px;
+  padding: 0.25em;
+}
+
+#blogs {
+  padding: 5em 0;
+}
+
+.blog-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2em;
+  padding: 2em 0;
+}
+
+.blog-card {
+  width: 30%;
+  transition: all 0.3s ease-in-out;
+}
+.blog-card img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 350px;
+}
+.blog-card:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
+.blog-card:hover h4 {
+  color: #D40000;
+}
+
+.viewallblogs {
+  display: block;
+  text-align: center;
+  margin: 4em auto;
+  margin-bottom: 2.5em;
+  border: 2px solid #D40000;
+  width: -moz-max-content;
+  width: max-content;
+  color: #D40000;
+  font-size: 16px;
+  font-family: "Montserrat";
+  padding: 1em 2.5em;
 }/*# sourceMappingURL=testimonials.css.map */
