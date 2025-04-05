@@ -317,9 +317,13 @@ nav ul li a:hover {
     text-align: center;
 }
 
+#testimonials {
+    padding-bottom: 5em;
+
+}
 
 
-@keyframes text-animation {
+ @keyframes text-animation { 
     0% {
         margin-top: -5px;
     }
@@ -359,7 +363,7 @@ nav ul li a:hover {
     100% {
         margin-top: -5px;
     }
-}
+} 
 
 /* Enquiry Form CSS */
 #enquiry {
