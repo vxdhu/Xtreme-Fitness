@@ -1,9 +1,13 @@
-@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+#testimonials {
+  padding-bottom: 6em;
+}
+
 .testimonial-conatainer {
   display: flex;
   justify-content: space-between;
   height: -moz-max-content;
   height: max-content;
+  margin-top: 5em;
 }
 
 .snip1533 {
@@ -21,6 +25,7 @@
   background-color: #ffffff;
   border-radius: 5px;
   border-top: 5px solid #D40000;
+  margin: 0;
 }
 
 .snip1533 *,
