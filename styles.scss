@@ -96,87 +96,88 @@ $open-sans: 'Open Sans', sans-serif;
 
 
 
-.nav-menu{
-  align-items: center;
+.nav-menu {
+    align-items: center;
 }
+
 nav ul {
-  list-style-type: none;
-  display: flex;
-  justify-content: space-between;
-  padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
 }
 
 li {
-  list-style-type: none;
+    list-style-type: none;
 }
 
 nav ul li {
-  padding: 0 1.5em
+    padding: 0 1.5em
 }
 
 nav ul li a {
-  font-size: 18px;
+    font-size: 18px;
 }
 
 nav ul li a:hover {
-  font-size: 18px;
-  color: #D40000;
+    font-size: 18px;
+    color: #D40000;
 }
 
 // initial li
 .down {
-  padding: 15px;
-  position: relative;
-  font-size: 18px;
-  color: black;
+    padding: 15px;
+    position: relative;
+    font-size: 18px;
+    color: black;
 
-  // secondary ul
-  ul {
-    display: none;
-  }
-
-  // initial li:hover
-  &:hover {
-    cursor: pointer;
-    // background-color: $subtle-grey;
-    color: #D40000;
-
-    // secondary ul visibility change
+    // secondary ul
     ul {
-      display: block;
-      padding-top: 50px;
-      width: 300px;
-      left: 0;
-      position: absolute;
-      
-
-      // secondary li
-      li {
-        display: block;
-        background-color: $subtle-grey;
-        padding: 1em 1.5em;
-        text-align: left;
-        color: $masked-grey;
-font-size: 16px;
-
-        span {
-          float: right;
-          color: $subtle-white;
-          background-color: $blue;
-          padding: .25em;
-          text-align: center;
-          font-size: .8rem;
-          border-radius: 3px;
-        }
-
-        &:hover {
-          background-color: darken($subtle-white, 5%);
-
-          color: #D40000;
-        }
-      }
+        display: none;
     }
-  }
+
+    // initial li:hover
+    &:hover {
+        cursor: pointer;
+        // background-color: $subtle-grey;
+        color: #D40000;
+
+        // secondary ul visibility change
+        ul {
+            display: block;
+            padding-top: 50px;
+            width: 300px;
+            left: 0;
+            position: absolute;
+
+
+            // secondary li
+            li {
+                display: block;
+                background-color: $subtle-grey;
+                padding: 1em 1.5em;
+                text-align: left;
+                color: $masked-grey;
+                font-size: 16px;
+
+                span {
+                    float: right;
+                    color: $subtle-white;
+                    background-color: $blue;
+                    padding: .25em;
+                    text-align: center;
+                    font-size: .8rem;
+                    border-radius: 3px;
+                }
+
+                &:hover {
+                    background-color: darken($subtle-white, 5%);
+
+                    color: #D40000;
+                }
+            }
+        }
+    }
 }
 
 
@@ -345,6 +346,7 @@ font-size: 16px;
     cursor: pointer;
     transition: all .3s ease-in-out;
 }
+
 .program-gym:hover,
 .program-academy:hover {
     background-color: rgba(0, 0, 0, 0.7);
@@ -352,8 +354,9 @@ font-size: 16px;
     background-position: center;
     transition: all .3s ease-in-out;
 }
+
 .program-gym:hover h4,
-.program-academy:hover h4{
+.program-academy:hover h4 {
     color: #D40000;
     transition: all .3s ease-in-out;
     letter-spacing: 40px;
@@ -399,7 +402,7 @@ font-size: 16px;
 
 
 
- @keyframes text-animation { 
+@keyframes text-animation {
     0% {
         margin-top: -5px;
     }
@@ -439,7 +442,7 @@ font-size: 16px;
     100% {
         margin-top: -5px;
     }
-} 
+}
 
 /* Enquiry Form CSS */
 #enquiry {
@@ -540,23 +543,26 @@ footer {
     /* bottom: 0; */
 }
 
-footer .note{
+footer .note {
     margin-top: 3em;
     background-color: #580000;
     margin-bottom: 0;
 }
-.footer-container{
+
+.footer-container {
     display: flex;
     justify-content: space-between;
 }
 
-.footer-logo{
+.footer-logo {
     width: 400px;
     text-align: left;
 }
-.footer-menu{
+
+.footer-menu {
     padding: 0;
 }
+
 .footer-menu li {
     list-style-type: none;
     color: white;
@@ -564,57 +570,133 @@ footer .note{
     padding-bottom: 1.25em;
 
 }
-.footer-menu li a{
+
+.footer-menu li a {
     display: block;
     color: white;
     text-decoration: none;
     font-size: 16px;
-    
+
     text-align: left;
 }
-.footer-left{
+
+.footer-left {
     width: 40%;
     text-align: left;
 }
-.footer-right{
+
+.footer-right {
     width: 30%;
     text-align: left;
 }
-.footer-middle{
+
+.footer-middle {
     width: 20%;
     text-align: left;
 }
-.footer-left p{
+
+.footer-left p {
     text-align: left;
     font-size: 12px;
     margin-top: 2em;
     width: 400px;
-   
+
 }
-.footer-menu img, .footer-social img{
+
+.footer-menu img,
+.footer-social img {
     width: 26px;
     padding-right: 0.5em;
 }
-.footer-menu li{
+
+.footer-menu li {
     display: flex;
     align-items: center;
 }
-.footer-social{
+
+.footer-social {
     display: flex;
     padding: 0;
-    align-items: center;    
+    align-items: center;
 }
-.footer-social li{
+
+.footer-social li {
     list-style-type: none;
     padding-right: 1.25em;
 }
+
 .card:hover {
     transform: scale(1.05);
     box-shadow: 0 0 20px rgba(0, 0, 0, .2);
     transition: all .3s ease-in-out;
     cursor: pointer;
-}   
-.card:hover p{
+}
+
+.card:hover p {
     color: #D40000;
 }
 
+#banner {
+    background: url(../images/banner.jpg) no-repeat center center/cover;
+    height: 35vh;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay;
+
+    .banner-heading {
+        font-size: 60px;
+        color: white;
+        font-family: Bebas Neue;
+        letter-spacing: 5px;
+    }
+}
+
+#contact {
+    padding: 5em 0;
+    text-align: center;
+
+    .contact-container {
+        display: flex;
+    }
+
+    form {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    label {
+        color: #333;
+    }
+
+    input {
+        color: #333;
+    }
+
+    .submit-btn {
+        color: white;
+    }
+
+    .contact-info {
+        display: flex;
+        width: 50%;
+        justify-content: space-between;
+        margin-top: 3em;
+        background-color: red;
+        margin: 0 auto;
+
+        img {
+            width: 50px;
+        }
+
+        .content-item{
+            width: 40%;
+        }
+    }
+
+    .contact-form {
+        width: 50%;
+    }
+}

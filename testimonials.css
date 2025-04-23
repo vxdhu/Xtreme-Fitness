@@ -99,41 +99,6 @@
   text-align: center;
 }
 
-.coach-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 2em;
-  padding: 2em 0;
-}
-
-.coach-card {
-  padding-bottom: 1em;
-  color: white;
-  background-color: rgba(56, 56, 56, 0.308);
-  width: 22.5%;
-  border-radius: 5px;
-}
-.coach-card img {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  height: 350px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-}
-.coach-card h4 {
-  font-size: 16px;
-  padding-top: 10px;
-  color: white;
-  padding-bottom: 10px;
-  text-transform: uppercase;
-}
-.coach-card p {
-  font-size: 14px;
-  padding: 0.25em;
-}
-
 #blogs {
   padding: 5em 0;
 }
@@ -177,4 +142,84 @@
   font-size: 16px;
   font-family: "Montserrat";
   padding: 1em 2.5em;
+}
+
+.coach-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4em;
+}
+
+.coach-card {
+  color: white;
+  width: 22.5%;
+  height: 450px;
+  border-radius: 5px;
+  padding-bottom: 1em;
+}
+.coach-card .front {
+  height: 100%;
+}
+.coach-card .front img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  height: 350px;
+}
+
+.content {
+  position: absolute;
+  width: 22.5%;
+  height: 100%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.coach-card:hover .content {
+  transform: rotateY(180deg);
+  transition: transform 0.5s;
+}
+
+.front,
+.back {
+  position: absolute;
+  background-color: rgba(56, 56, 56, 0.308);
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 5px;
+  backface-visibility: hidden;
+  width: 100%;
+}
+.front p,
+.back p {
+  padding: 0;
+  padding-bottom: 1em;
+}
+
+.front h4 {
+  margin: 0;
+  color: white;
+  text-transform: uppercase;
+}
+
+.back {
+  background: rgba(56, 56, 56, 0.699);
+  width: 100%;
+  height: 100%;
+  color: white;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.back p {
+  padding: 0;
+  width: 80%;
+  text-align: center;
 }/*# sourceMappingURL=testimonials.css.map */
