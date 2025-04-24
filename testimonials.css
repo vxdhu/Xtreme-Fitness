@@ -130,7 +130,7 @@
   color: #D40000;
 }
 
-.viewallblogs {
+.viewallblogs, .secondary-cta {
   display: block;
   text-align: center;
   margin: 4em auto;
