@@ -1,0 +1,27 @@
+.dna-container {
+  display: flex;
+  margin: 3em 0;
+  align-items: center;
+  justify-content: space-between;
+}
+.dna-container .dna-card {
+  box-shadow: 0 0 10px rgba(129, 0, 0, 0.1);
+  padding: 2.5em 1em;
+  background-color: #ffffff;
+  text-align: center;
+  border-radius: 5px;
+  width: 27%;
+  transition: all 0.3s ease-in-out;
+}
+.dna-container .dna-card p {
+  font-style: italic;
+  width: 90%;
+  margin: 0 auto;
+}
+.dna-container .dna-card h4 {
+  font-size: 24px;
+  margin-top: 1em;
+}
+.dna-container .dna-card img {
+  width: 100px;
+}/*# sourceMappingURL=about.css.map */

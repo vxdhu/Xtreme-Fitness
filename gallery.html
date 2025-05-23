@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery - Xtreme Fitness Gym and Academy</title>
+    <title>Blog - Xtreme Fitness Gym and Academy</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="gallerymain.css">
+
 </head>
 
 <body>
@@ -46,6 +48,39 @@
         </header>
     </div>
     <main>
+        <section id="banner" style=" background: url(../images/banner3.jpg) no-repeat center center/cover;">
+            <div class="wrapper">
+                <h1 class="banner-heading">Gallery</h1>
+                <p> The Xtreme Fitness Moments</p>
+            </div>
+        </section>
+        <!-- Main gallery -->
+        <div class="gallery wrapper">
+            <div class="img-w">
+                <img src="images/gallery/IMG-20210909-WA0061.jpg"
+                    alt="" />
+            </div>
+            <div class="img-w">
+                <img src="images/gallery/IMG-20210909-WA0063.jpg"
+                    alt="" />
+            </div>
+            <div class="img-w">
+                <img src="images/gallery/IMG-20210909-WA0089.jpg"
+                    alt="" />
+            </div>
+            <div class="img-w">
+                <img src="images/gallery/IMG-20220713-WA0043.jpg"
+                    alt="" />
+            </div>
+            <div class="img-w">
+                <img src="images/gallery/IMG-20211211-WA0039.jpg"
+                    alt="" />
+            </div>
+            <div class="img-w">
+                <img src="images/gallery/IMG-20211223-WA0046.jpg"
+                    alt="" />
+            </div>           
+        </div>
 
     </main>
     <footer>
@@ -96,6 +131,50 @@
 
         <p class="note">&copy;2025 Xtreme Fitness. All rights reserved. <br> Developed with ❤️ by VSYNC</p>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $(".img-w").each(function () {
+                $(this).wrap("<div class='img-c'></div>")
+                let imgSrc = $(this).find("img").attr("src");
+                $(this).css('background-image', 'url(' + imgSrc + ')');
+            })
+
+
+            $(".img-c").click(function () {
+                let w = $(this).outerWidth()
+                let h = $(this).outerHeight()
+                let x = $(this).offset().left
+                let y = $(this).offset().top
+
+
+                $(".active").not($(this)).remove()
+                let copy = $(this).clone();
+                copy.insertAfter($(this)).height(h).width(w).delay(500).addClass("active")
+                $(".active").css('top', y - 8);
+                $(".active").css('left', x - 8);
+
+                setTimeout(function () {
+                    copy.addClass("positioned")
+                }, 0)
+
+            })
+
+
+
+
+        })
+
+        $(document).on("click", ".img-c.active", function () {
+            let copy = $(this)
+            copy.removeClass("positioned active").addClass("postactive")
+            setTimeout(function () {
+                copy.remove();
+            }, 500)
+        })
+    </script>
 </body>
+
+
 
 </html>

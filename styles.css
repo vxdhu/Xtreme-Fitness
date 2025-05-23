@@ -205,6 +205,10 @@ nav ul li a:hover {
   letter-spacing: 2px;
 }
 
+.section-heading.center {
+  text-align: center;
+}
+
 .section-para {
   font-size: 16px;
   line-height: 1.8;
@@ -275,7 +279,6 @@ nav ul li a:hover {
   background-color: #f8f8f8;
   font-size: 24px;
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease-in-out;
 }
 
@@ -656,4 +659,69 @@ footer .note {
   font-size: 16px;
   font-family: "Montserrat";
   padding: 1em 2.5em;
+}
+
+#blogs {
+  padding: 5em 0;
+}
+
+.blog-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  gap: 4em;
+  margin-top: 2em;
+  padding: 2em 0;
+}
+
+.blog-card {
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+.blog-card img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 350px;
+}
+.blog-card:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
+.blog-card:hover h4 {
+  color: #D40000;
+}
+
+.viewallblogs,
+.secondary-cta {
+  display: block;
+  text-align: center;
+  margin: 4em auto;
+  margin-bottom: 2.5em;
+  border: 2px solid #D40000;
+  width: -moz-max-content;
+  width: max-content;
+  color: #D40000;
+  font-size: 16px;
+  font-family: "Montserrat";
+  padding: 1em 2.5em;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
+  .testimonial-conatainer {
+    flex-direction: column;
+  }
+  .card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+  }
+  .card-container .card {
+    width: 80%;
+    margin: 0;
+  }
 }/*# sourceMappingURL=styles.css.map */
